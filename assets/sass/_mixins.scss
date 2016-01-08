@@ -1,0 +1,7 @@
+
+@mixin prefix($name, $arg...) {
+  -webkit-#{$name}: #{$arg};
+  -moz-#{$name}: #{$arg};
+  -o-#{$name}: #{$arg};
+  #{$name}: #{$arg};
+}

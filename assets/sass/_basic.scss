@@ -1,0 +1,46 @@
+
+// Color Definition
+
+$colorLightest: rgb(255, 255, 255); // white
+$colorLight: rgb(250, 250, 250); // light grey
+$colorMedium: rgb(232, 232, 232); // medium grey
+$colorDarkest: rgb(111, 111, 111); // grey
+$colorBlack: rgb(0, 0, 0); // black
+
+$colorButtonHighlight: rgb(255, 143, 0); // orange
+$colorButtonHighlightMedium: rgb(230, 129, 0); // medium orange
+$colorButtonHighlightDark: rgb(214, 120, 0); // darker orange
+
+$colorButtonDone: rgb(101, 203, 51); // green
+$colorButtonDoneMedium: rgb(91, 183, 46); // medium green
+$colorButtonDoneDark: rgb(67, 134, 34); // dark green
+
+$colorHighlightLightest: rgb(102, 175, 233); // light blue
+$colorHighlight: rgb(32, 161, 255); // blue
+$colorHighlightMedium: rgb(65, 137, 201); // medium blue
+$colorHighlightDarker: rgb(0, 107, 185); // darker blue
+
+
+// Color Usage
+
+$colorGeneralBG: $colorLight;
+$colorContainerBG: $colorLightest;
+
+$colorContentHeadline: $colorHighlightDarker;
+$colorContentText: $colorDarkest;
+$colorContentBG: $colorLight;
+$colorContentLink: $colorHighlightMedium;
+
+$colorNaviHeadline: $colorDarkest;
+$colorNaviLink: $colorDarkest;
+$colorNaviActive: $colorHighlightDarker;
+$colorNaviHover: $colorHighlight;
+
+$colorButton: $colorButtonHighlight;
+$colorButtonHover: $colorButtonHighlightDark;
+
+
+// Font
+
+$fontDefault: 'Source Sans Pro', sans-serif;
+
