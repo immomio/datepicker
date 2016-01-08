@@ -1,6 +1,20 @@
 module.exports = function(grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
+    browserSync: {
+      dev : {
+        bsFiles: {
+          src : 'assets/css/*.css'
+        },
+        options: {
+          watchTask: true,
+          server: {
+            baseDir: "./"
+          },
+          open : false
+        }
+      }
+    },
 
     sass: {
       dist: {
@@ -45,11 +59,12 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-browser-sync');
 
   grunt.registerTask('test', ['jshint']);
   grunt.registerTask('css', ['sass']);
   grunt.registerTask('once', ['sass', 'test']);
   grunt.registerTask('watcher', ['sass', 'watch:stylesheets']);
-  grunt.registerTask('default', ['sass', 'test', 'watch']);
+  grunt.registerTask('default', ['sass', 'test', 'browserSync', 'watch']);
 
 };
