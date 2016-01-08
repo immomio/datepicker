@@ -14,7 +14,7 @@
 
   <div class="datepicker-container" ng-app="datepicker" ng-controller="mainController">
     <h1>Datepicker</h1>
-    <p>Ausgew&auml;hltes Datum: <span id="displayDate">{{user.datePicker}}</span></p>
+    <p>Ausgew&auml;hltes Datum: <span id="displayDate">{{user.datePicker | format}}</span></p>
     <div>Erster Datepicker:</div>
     <div id="datepicker" data-name="form-date" data-the-datepicker ng-model="user.datePicker"></div>
     <div>Zweiter Datepicker (zur Kontrolle das Sie beide updaten)</div>
