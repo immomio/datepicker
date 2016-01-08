@@ -4,7 +4,9 @@ $.datepicker.setDefaults($.datepicker.regional.de);
 
 module.controller('mainController', function ($scope) {
   $scope.user = {
-    datePicker: moment().format('YYYY-MM-DD')
+    datePicker: moment().format('YYYY-MM-DD'),
+    // Extra Datensatz damit gezeigt wird das auch Daten als input angenommen werden
+    datePicker2: moment('2011-11-1', 'YYYY-MM-DD').format('YYYY-MM-DD')
   };
 });
 
