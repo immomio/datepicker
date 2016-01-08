@@ -16,7 +16,7 @@ body {
     color: #006bb9;
     font-weight: 300;
     font-size: 26px; }
-  .datepicker-container input#datepicker {
+  .datepicker-container [data-the-datepicker] {
     padding: 6px;
     height: 24px;
     width: 90%;
@@ -33,7 +33,7 @@ body {
     -o-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.25);
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.25);
     outline: 0; }
-    .datepicker-container input#datepicker:focus {
+    .datepicker-container [data-the-datepicker]:focus {
       border: 1px solid #20a1ff;
       -webkit-box-shadow: 0 0 6px rgba(102, 175, 233, 0.4);
       -moz-box-shadow: 0 0 6px rgba(102, 175, 233, 0.4);
@@ -45,7 +45,7 @@ body {
     margin: 2em;
     padding: 3em;
     border: 1px solid #e8e8e8; }
-    .datepicker-container input#datepicker {
+    .datepicker-container [data-the-datepicker] {
       width: 60%; } }
 @media only screen and (min-width: 899px) {
   .datepicker-container {
